@@ -1,0 +1,31 @@
+.review-container {
+  display: flex;
+  border: 1px solid gray;
+  width: 571px;
+  height: 107px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  border-radius: 8px;
+}
+.review-container img {
+  padding: 8px;
+  width: 91px;
+  height: 91px;
+  border-radius: 81px;
+}
+.review-details-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 5px;
+}
+.review-details p, .review-details h3{
+    margin: 4px 0;
+}
+.review-details p{
+    font-size: 18px;
+}
+.color{
+    color: #FF9900
+}
