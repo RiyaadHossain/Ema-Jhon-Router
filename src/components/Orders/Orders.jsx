@@ -8,6 +8,10 @@ import './Orders.css'
 const Orders = () => {
     const [products, setProducts] = useProducts()
     const [cart, setCart] = useCart(products)
+    const removeItem = (product) => {
+        const restItem = cart.filter(item => item.id !== product.id)
+        setCart(restItem)
+    }
     let count = 0;
     for (const item of cart) {
         count = item.quantity + count
@@ -15,7 +19,7 @@ const Orders = () => {
     return (
         <div className='shop-container'>
             <div className="order-product">
-                {cart.map(item => <ReviewItem key={item.id} item={item}/>)}
+                {cart.map(item => <ReviewItem key={item.id} removeItem={removeItem} item={item}/>)}
             </div>
             <div className="cart-container">
                 <Cart cart={cart}/>
