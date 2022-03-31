@@ -2,7 +2,7 @@ import React from 'react';
 import './ReviewItem.css'
 
 const ReviewItem = ({ item }) => {
-    const {name, img, price, shipping} =item
+    const {name, img, price, quantity, shipping} =item
     return (
         <div className='review-container'>
             <div>
@@ -10,7 +10,9 @@ const ReviewItem = ({ item }) => {
            </div>
            <div className="review-details-button">
                 <div className="review-details">
-                    <h3 title={name}>{name.length > 20 ? `${name.slice(0, 20)}...`  : name}</h3>
+                    <div className='name-quantity'>
+                    <h3 title={name}>{name.length > 20 ? `${name.slice(0, 20)}...` : name}</h3><span className='quantity'>{quantity }</span>
+                    </div>
                     <p>Price: <span className='color'>${price}</span></p>
                     <p>Shipping Charge: <span className='color'>${shipping}</span></p>
                </div>
