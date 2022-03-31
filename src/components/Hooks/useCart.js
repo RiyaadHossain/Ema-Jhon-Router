@@ -9,7 +9,7 @@ const useCart = (products) => {
         for (const id in storedCart) {
             const previousProduct = products.find(product => product.id === id)
             if (previousProduct) {
-                previousProduct.quaintity = storedCart[id]
+                previousProduct.quantity = storedCart[id]
                 newCart.push(previousProduct)
             }
         }
