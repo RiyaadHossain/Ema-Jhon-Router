@@ -1,7 +1,19 @@
-.order-product{
-   display: flex;
-   flex-direction: column;
+.order-product {
+  display: flex;
+  flex-direction: column;
 }
-.order-product{
-   margin-top: 40px;
+.order-product {
+  margin-top: 40px;
+}
+.primary-btn {
+  background: #ff9900;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+}
+.icon-arrow{
+   margin-left: 8px;
 }
